@@ -1,0 +1,24 @@
+on:
+  push:
+    branches:
+      - main
+name: Deploy website on push
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get latest code
+      uses: actions/checkout@v3
+
+    - name: Push files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: pdx1-shared-a1-27.dreamhost.com
+        port: 21
+        local-dir: out/
+        server-dir: landrow.net/
+        username: dh_d7utsg
+        password: hnaKMfw1mM
+        log-level: verbose
+        timeout: 60000
