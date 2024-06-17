@@ -1,23 +1,22 @@
 import { Link, Snippet, Code, button as buttonStyles } from "@nextui-org/react";
-
+import {Popover, PopoverTrigger, PopoverContent, Button} from "@nextui-org/react";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
+import { LinkedInIcon } from "@/components/icons";
+import { Profile } from "@/components/profile";
 import DefaultLayout from "@/layouts/default";
-
-export default function IndexPage() {
+export default function IndexPage() {  
   return (
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-        <div className="inline-block max-w-lg text-center justify-center">
-          <h1 className={title()}>Make&nbsp;</h1>
-          <h1 className={title({ color: "violet" })}>beautiful&nbsp;</h1>
-          <br />
+        <div className="inline-block max-w-3xl text-center justify-center">
+          <h1 className={title()}>Technology Leader & Digital Marketing &nbsp;</h1>
+          <h1 className={title({ color: "violet" })}>Expert&nbsp;</h1>
           <h1 className={title()}>
-            websites regardless of your design experience.
+          with a demonstrated track record for building high-functioning teams.
           </h1>
           <h4 className={subtitle({ class: "mt-4" })}>
-            Beautiful, fast and modern React UI library.ss
+            Winston Salem, NC
           </h4>
         </div>
 
@@ -31,25 +30,84 @@ export default function IndexPage() {
             })}
             href={siteConfig.links.docs}
           >
-            Documentation
+            Full Resume
           </Link>
           <Link
             isExternal
             className={buttonStyles({ variant: "bordered", radius: "full" })}
             href={siteConfig.links.github}
           >
-            <GithubIcon size={20} />
-            GitHub
+          <LinkedInIcon size={20} />
+            LinkedIn
           </Link>
         </div>
-
         <div className="mt-8">
-          <Snippet hideCopyButton hideSymbol variant="bordered">
-            <span>
-              Get started by editing{" "}
-              <Code color="primary">pages/index.tsx</Code>
-            </span>
-          </Snippet>
+          <Profile />
+        </div>
+        <div>
+        <h2 className={title()}>Superpowers</h2>
+        </div>
+        <div className="flex flex-wrap gap-4">
+        <Popover placement="bottom" showArrow={true}>
+          <PopoverTrigger>
+            <Button>Process Development</Button>
+          </PopoverTrigger>
+          <PopoverContent>
+            <div className="px-1 py-2">
+              <div className="text-small font-bold">A detail-oriented professional who understands how operations impact efficiency and profits.</div>
+            </div>
+          </PopoverContent>
+        </Popover>
+        <Popover placement="bottom" showArrow={true}>
+          <PopoverTrigger>
+            <Button>Leadership</Button>
+          </PopoverTrigger>
+          <PopoverContent>
+            <div className="px-1 py-2">
+              <div className="text-small font-bold">A detail-oriented professional who understands how operations impact efficiency and profits.</div>
+            </div>
+          </PopoverContent>
+        </Popover>
+        <Popover placement="bottom" showArrow={true}>
+          <PopoverTrigger>
+            <Button>Solutions Mindset</Button>
+          </PopoverTrigger>
+          <PopoverContent>
+            <div className="px-1 py-2">
+              <div className="text-small font-bold">A detail-oriented professional who understands how operations impact efficiency and profits.</div>
+            </div>
+          </PopoverContent>
+        </Popover>
+        <Popover placement="bottom" showArrow={true}>
+          <PopoverTrigger>
+            <Button>Collaborative</Button>
+          </PopoverTrigger>
+          <PopoverContent>
+            <div className="px-1 py-2">
+              <div className="text-small font-bold">A detail-oriented professional who understands how operations impact efficiency and profits.</div>
+            </div>
+          </PopoverContent>
+        </Popover>
+        <Popover placement="bottom" showArrow={true}>
+          <PopoverTrigger>
+            <Button>Personal Accountability</Button>
+          </PopoverTrigger>
+          <PopoverContent>
+            <div className="px-1 py-2">
+              <div className="text-small font-bold">A detail-oriented professional who understands how operations impact efficiency and profits.</div>
+            </div>
+          </PopoverContent>
+        </Popover>
+        <Popover placement="bottom" showArrow={true}>
+          <PopoverTrigger>
+            <Button>Coaching & Team Development</Button>
+          </PopoverTrigger>
+          <PopoverContent>
+            <div className="px-1 py-2">
+              <div className="text-small font-bold">A detail-oriented professional who understands how operations impact efficiency and profits.</div>
+            </div>
+          </PopoverContent>
+        </Popover>
         </div>
       </section>
     </DefaultLayout>
