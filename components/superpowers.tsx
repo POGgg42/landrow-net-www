@@ -19,7 +19,7 @@ export const Superpowers = () => {
         <AccordionItem key="5" aria-label="Personal Accountability" title="&#x2705;Personal Accountability">
         <p className="text-left">A driven determination to embrace and accept responsibility for any assigned challenge.</p>
         </AccordionItem>
-        <AccordionItem key="6" aria-label="Team Development" title="&#x1F3CB;&#xFE0F;Team Developmentorative">
+        <AccordionItem key="6" aria-label="Coaching &amp; Team Development" title="&#x1F3CB;&#xFE0F;Coaching &amp; Team Development">
         <p className="text-left">Strategically mentor and coach individuals, and develop plans designed to highlight individuals&apos; unique needs to both challenge and grow them personally and professionally.</p>
         </AccordionItem>
       </Accordion>
