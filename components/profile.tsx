@@ -1,18 +1,19 @@
 import React from "react";
-import {Card, CardHeader, CardBody, CardFooter, Avatar } from "@nextui-org/react";
+import {Card, CardHeader, CardBody, CardFooter, Avatar, Image } from "@nextui-org/react";
 import { Link, button as buttonStyles } from "@nextui-org/react";
 import { siteConfig } from "@/config/site";
+import profilePic from '../public/matt-headshot.jpg';
 export const Profile = () => {
   return (
     <Card className="max-w-[340px]">
       <CardHeader className="justify-between">
         <div className="flex gap-5">
-          <Avatar isBordered radius="full" size="md" src="https://nextui.org/avatars/avatar-1.png" />
+          <Avatar isBordered radius="full" size="md" src={profilePic.src} />
           <div className="flex flex-col gap-1 items-start justify-center">
             <h4 className="text-small font-semibold leading-none text-default-600">Matt Rowland</h4>
             <h5 className="text-small tracking-tight text-default-400">matt@landrow.net</h5>
           </div>
-        </div>
+            </div>
         <Link
             isExternal
             className={buttonStyles({
