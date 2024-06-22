@@ -44,7 +44,7 @@ export const Navbar = () => {
         justify="end"
       >
         <NavbarItem className="hidden sm:flex gap-2">
-          <Link isExternal href={siteConfig.links.twitter}>
+          <Link isExternal href={siteConfig.links.linkedin}>
             <LinkedInIcon className="text-default-500" />
           </Link>
           <ThemeSwitch />
@@ -52,7 +52,7 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-           <Link isExternal href={siteConfig.links.twitter}>
+           <Link isExternal href={siteConfig.links.linkedin}>
             <LinkedInIcon className="text-default-500" />
           </Link>
         <ThemeSwitch />
@@ -71,7 +71,7 @@ export const Navbar = () => {
                       ? "danger"
                       : "foreground"
                 }
-                href="#"
+                href={item.href}
                 size="lg"
               >
                 {item.label}

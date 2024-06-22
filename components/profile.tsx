@@ -3,6 +3,7 @@ import {Card, CardHeader, CardBody, CardFooter, Avatar, Image } from "@nextui-or
 import { Link, button as buttonStyles } from "@nextui-org/react";
 import { siteConfig } from "@/config/site";
 import profilePic from '../public/matt-headshot.jpg';
+import { LinkedInIcon } from "@/components/icons";
 export const Profile = () => {
   return (
     <Card className="max-w-[340px]">
@@ -21,24 +22,25 @@ export const Profile = () => {
               radius: "full",
               variant: "shadow",
             })}
-            href={siteConfig.links.docs}
+            href={siteConfig.links.linkedin}
           >
-            Email
+            <LinkedInIcon size={20} />
+            LinkedIn
           </Link>
       </CardHeader>
-      <CardBody className="px-3 py-0 text-small text-default-400">
+      <CardBody className="px-3 py-0 text-small text-default-400 overflow-visible">
         <p>
-        4A’s Certified Team Leader with over 20 years experience designing & developing digital products and leading high performance digital product teams.
-        <span className="py-2" aria-label="computer" role="img">💻</span> 
+        4A&rsquo;s Certified Team Leader with over 20 years experience designing & developing digital products and leading digital teams.
+        <span className="py-2" aria-label="computer" role="img">&#x1F4BB;</span>
         </p>
       </CardBody>
       <CardFooter className="gap-3">
         <div className="flex gap-1">
-          <p className="font-semibold text-default-400 text-small">4</p>
-          <p className=" text-default-400 text-small">Following</p>
+          <p className="font-semibold text-default-400 text-small">199</p>
+          <p className=" text-default-400 text-small">Connections</p>
         </div>
         <div className="flex gap-1">
-          <p className="font-semibold text-default-400 text-small">97.1K</p>
+          <p className="font-semibold text-default-400 text-small">202</p>
           <p className="text-default-400 text-small">Followers</p>
         </div>
       </CardFooter>

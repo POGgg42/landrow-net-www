@@ -25,7 +25,7 @@ export default function WorkPage() {
         </div>
         <div className="max-w-[900px] gap-2 grid grid-cols-12 grid-rows-2 px-8">
           
-          <Card isFooterBlurred isPressable onPress={modal4.onOpen} className="col-span-12 sm:col-span-7 h-[300px]">
+          <Card isFooterBlurred isPressable onPress={modal4.onOpen} className="col-span-12 sm:col-span-12 h-[300px]">
             <CardHeader className="absolute z-10 top-1 flex-col items-start">
               <h4 className="text-white/90 font-medium text-xl">Bioholistic Skin Science&trade;</h4>
             </CardHeader>
@@ -55,7 +55,7 @@ export default function WorkPage() {
             </CardFooter>
           </Card>
 
-          <Card isFooterBlurred isPressable onPress={modal3.onOpen} className="col-span-12 sm:col-span-5 h-[300px]">
+          <Card isFooterBlurred isPressable onPress={modal3.onOpen} className="col-span-12 sm:col-span-6 h-[300px]">
             <CardHeader className="absolute z-10 top-1 flex-col !items-start">
               <h4 className="text-white/90 font-medium text-xl">Wellbeing should be shared&trade;</h4>
             </CardHeader>  
@@ -85,7 +85,7 @@ export default function WorkPage() {
             </CardFooter>
           </Card>
 
-          <Card isFooterBlurred isPressable onPress={modal2.onOpen} className="col-span-12 sm:col-span-5 h-[300px]">
+          <Card isFooterBlurred isPressable onPress={modal2.onOpen} className="col-span-12 sm:col-span-6 h-[300px]">
             <CardHeader className="absolute z-10 top-1 flex-col !items-start">
               <h4 className="text-white/90 font-medium text-xl">Building A Cheesesteak Empire.</h4>
             </CardHeader>
@@ -115,7 +115,7 @@ export default function WorkPage() {
             </CardFooter>
           </Card>
 
-          <Card isFooterBlurred isPressable onPress={onOpen} className="w-full h-[300px] col-span-12 sm:col-span-7">
+          <Card isFooterBlurred isPressable onPress={onOpen} className="w-full h-[300px] col-span-12 sm:col-span-12">
             <CardHeader className="absolute z-10 top-1 flex-col items-start">
               <h4 className="text-white/90 font-medium text-xl">Internet Built for the Future</h4>
             </CardHeader>
