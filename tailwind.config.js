@@ -1,5 +1,4 @@
 import {nextui} from '@nextui-org/react'
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -12,5 +11,26 @@ module.exports = {
     extend: {},
   },
   darkMode: "class",
-  plugins: [nextui()],
+  plugins: [nextui({
+    /* themes: {
+      light: {
+        colors: {
+          primary: {
+            DEFAULT: "#ff4f00",
+            foreground: "#000000",
+          },
+          focus: "#BEF264",
+        },
+      },
+      dark: {
+        colors: {
+          primary: {
+            DEFAULT: "#ff4f00",
+            foreground: "#ffffff",
+          },
+          focus: "#BEF264",
+        },
+      }
+    } */
+  })],
 }

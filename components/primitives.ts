@@ -4,9 +4,11 @@ export const title = tv({
   base: "tracking-tight inline font-semibold",
   variants: {
     color: {
-      tmntgreen: "from-[#4c9c23] to-[#4c9c40]",
-      tmntyellow: "from-[#ffa500] to-[#e59400]",
-      tmntblue: "from-[#00aae6] to-[#0088b8]",
+      tmnt: "from-[#4c9c23] to-[#4c9c40]",
+      mikey: "from-[#ffa500] to-[#e59400]",
+      leo: "from-[#00aae6] to-[#0088b8]",
+      donnie: "from-[#aa1bdd] to-[#76129a]",
+      raph: "from-[#e3331c] to-[#b52816]",
       violet: "from-[#FF1CF7] to-[#b249f8]",
       yellow: "from-[#FF705B] to-[#FFB457]",
       blue: "from-[#5EA2EF] to-[#0072F5]",
@@ -16,12 +18,16 @@ export const title = tv({
       foreground: "dark:from-[#FFFFFF] dark:to-[#4B4B4B]",
     },
     size: {
+      xs: "text-xl lg:text-2xl",
       sm: "text-3xl lg:text-4xl",
       md: "text-[2.3rem] lg:text-5xl leading-9",
       lg: "text-4xl lg:text-6xl",
     },
     fullWidth: {
       true: "w-full block",
+    },
+    pad: {
+      bottom: "pb-34",
     },
   },
   defaultVariants: {
@@ -30,9 +36,11 @@ export const title = tv({
   compoundVariants: [
     {
       color: [
-        "tmntgreen",
-        "tmntyellow",
-        "tmntblue",
+        "tmnt",
+        "mikey",
+        "leo",
+        "donnie",
+        "raph",
         "violet",
         "yellow",
         "blue",

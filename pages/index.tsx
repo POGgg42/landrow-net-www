@@ -10,11 +10,12 @@ export default function IndexPage() {
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <div className="inline-block max-w-3xl text-center justify-center">
-          <h1 className={title({ color: "tmntyellow" })}>Technology&nbsp;</h1>
-          <h1 className={title()}>Leader &&nbsp;</h1>
-          <h1 className={title({ color: "tmntblue" })}>Digital&nbsp;</h1>
-          <h1 className={title()}>Marketing&nbsp;</h1>
-          <h1 className={title({ color: "tmntgreen" })}>Expert&nbsp;</h1>
+          <h1 className={title({ color: "donnie" })}>Technology </h1>
+          <h1 className={title({ color: "raph" })}>Leader </h1>
+          <h1 className={title()}>&amp; </h1>
+          <h1 className={title({ color: "leo" })}>Digital </h1>
+          <h1 className={title({ color: "mikey" })}>Marketing </h1>
+          <h1 className={title({ color: "tmnt" })}>Expert </h1>
           <h1 className={title()}>with a demonstrated track record for building high-functioning teams.</h1>
           <h4 className={subtitle({ class: "mt-4" })}>Winston Salem, NC</h4>
         </div>

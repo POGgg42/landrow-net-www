@@ -14,9 +14,9 @@ import LumosLogo from '../../public/work/lumos/logo.svg';
 
 export default function WorkPage() {
   const {isOpen, onOpen, onOpenChange} = useDisclosure();
-  const modal2 = useDisclosure()
-  const modal3 = useDisclosure()
-  const modal4 = useDisclosure()
+  const modal2 = useDisclosure();
+  const modal3 = useDisclosure();
+  const modal4 = useDisclosure();
   return (
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
