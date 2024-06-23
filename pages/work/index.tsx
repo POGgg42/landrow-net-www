@@ -1,6 +1,6 @@
 import { title } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
-import {Card, CardHeader, CardBody, CardFooter, Image, Button} from "@nextui-org/react";
+import {Card, CardHeader, CardBody, CardFooter, Image, Button, Link} from "@nextui-org/react";
 import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure} from "@nextui-org/react";
 import LumosCardBG from '../../public/work/lumos/family-using-vr-headset-optimized-1.webp';
 import CharleysCardBG from '../../public/work/charleys/charleys-bg-3.webp';
@@ -51,7 +51,14 @@ export default function WorkPage() {
                   <p className="text-tiny text-white/60">truebotanicals.com</p>
                 </div>
               </div>
-              <Button radius="full" size="sm">Visit Site</Button>
+              <Button
+                href="https://truebotanicals.com/"
+                as={Link}
+                color="primary"
+                radius="full"
+                size="sm"
+                isExternal
+                >Visit Site</Button>
             </CardFooter>
           </Card>
 
@@ -81,7 +88,16 @@ export default function WorkPage() {
                   <p className="text-tiny text-white/60">wellnesspetfood.com</p>
                 </div>
               </div>
-              <Button radius="full" size="sm">Visit Site</Button>
+              <Button
+                href="https://www.wellnesspetfood.com/"
+                as={Link}
+                color="primary"
+                radius="full"
+                size="sm"
+                isExternal
+                >Visit Site
+                </Button>
+
             </CardFooter>
           </Card>
 
@@ -111,7 +127,14 @@ export default function WorkPage() {
                   <p className="text-tiny text-white/60">charleys.com</p>
                 </div>
               </div>
-              <Button radius="full" size="sm">Visit Site</Button>
+              <Button
+                href="https://www.charleys.com/"
+                as={Link}
+                color="primary"
+                radius="full"
+                size="sm"
+                isExternal
+                >Visit Site</Button>
             </CardFooter>
           </Card>
 
@@ -141,7 +164,14 @@ export default function WorkPage() {
                   <p className="text-tiny text-white/60">lumosfiber.com</p>
                 </div>
               </div>
-              <Button radius="full" size="sm">Visit Site</Button>
+              <Button
+                href="https://truebotanicals.com/"
+                as={Link}
+                color="primary"
+                radius="full"
+                size="sm"
+                isExternal
+                >Visit Site</Button>
             </CardFooter>
           </Card>
 
@@ -149,32 +179,29 @@ export default function WorkPage() {
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
+              <ModalHeader className="flex flex-col gap-1">Lumos Fiber</ModalHeader>
               <ModalBody>
-                <p> 
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam pulvinar risus non risus hendrerit venenatis.
-                  Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam pulvinar risus non risus hendrerit venenatis.
-                  Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                </p>
-                <p>
-                  Magna exercitation reprehenderit magna aute tempor cupidatat consequat elit
-                  dolor adipisicing. Mollit dolor eiusmod sunt ex incididunt cillum quis. 
-                  Velit duis sit officia eiusmod Lorem aliqua enim laboris do dolor eiusmod. 
-                  Et mollit incididunt nisi consectetur esse laborum eiusmod pariatur 
-                  proident Lorem eiusmod et. Culpa deserunt nostrud ad veniam.
-                </p>
+                <p><strong>Role:</strong> Digital Team Leader, Developer, Digital Strategist</p>
+                <ul className="list-disc list-inside leading-relaxed pb-4">
+                  <li className="-indent-4 pl-4">UI/UX Design</li>
+                  <li className="-indent-4 pl-4">Custom eCommerce Front-End Development</li>
+                  <li className="-indent-4 pl-4">Custom OSS/BSS API Integration</li>
+                  <li className="-indent-4 pl-4">SalesForce/Marketing Cloud API Integration</li>
+                  <li className="-indent-4 pl-4">Search Engine Optimization</li>
+                </ul>
               </ModalBody>
               <ModalFooter>
-                <Button color="danger" variant="light" onPress={onClose}>
+                <Button radius="full" size="sm" variant="light" onPress={onClose}>
                   Close
                 </Button>
-                <Button color="primary" onPress={onClose}>
-                  Action
+                <Button
+                  href="https://www.lumosfiber.com/"
+                  as={Link}
+                  color="primary"
+                  radius="full"
+                  size="sm"
+                  isExternal
+                >Visit Site
                 </Button>
               </ModalFooter>
             </>
@@ -186,32 +213,29 @@ export default function WorkPage() {
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">Modal 2 Title</ModalHeader>
+              <ModalHeader className="flex flex-col gap-1">Charleys</ModalHeader>
               <ModalBody>
-                <p> 
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam pulvinar risus non risus hendrerit venenatis.
-                  Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam pulvinar risus non risus hendrerit venenatis.
-                  Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                </p>
-                <p>
-                  Magna exercitation reprehenderit magna aute tempor cupidatat consequat elit
-                  dolor adipisicing. Mollit dolor eiusmod sunt ex incididunt cillum quis. 
-                  Velit duis sit officia eiusmod Lorem aliqua enim laboris do dolor eiusmod. 
-                  Et mollit incididunt nisi consectetur esse laborum eiusmod pariatur 
-                  proident Lorem eiusmod et. Culpa deserunt nostrud ad veniam.
-                </p>
+                <p><strong>Role:</strong> Digital Team Leader</p>
+                <ul className="list-disc list-inside leading-relaxed pb-4">
+                  <li className="-indent-4 pl-4">UI/UX Design</li>
+                  <li className="-indent-4 pl-4">Custom eCommerce Front-End Development</li>
+                  <li className="-indent-4 pl-4">Location Finder (Google Maps/TomTom Maps API)</li>
+                  <li className="-indent-4 pl-4">OLO/Punchh API Integration</li>
+                  <li className="-indent-4 pl-4">Search Engine Optimization</li>
+                </ul>
               </ModalBody>
               <ModalFooter>
-                <Button color="danger" variant="light" onPress={onClose}>
+                <Button radius="full" size="sm" variant="light" onPress={onClose}>
                   Close
                 </Button>
-                <Button color="primary" onPress={onClose}>
-                  Action
+                <Button
+                  href="https://www.charleys.com/"
+                  as={Link}
+                  color="primary"
+                  radius="full"
+                  size="sm"
+                  isExternal
+                >Visit Site
                 </Button>
               </ModalFooter>
             </>
@@ -223,32 +247,30 @@ export default function WorkPage() {
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">Modal 3 Title</ModalHeader>
+              <ModalHeader className="flex flex-col gap-1">Wellness Pet Food</ModalHeader>
               <ModalBody>
-                <p> 
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam pulvinar risus non risus hendrerit venenatis.
-                  Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam pulvinar risus non risus hendrerit venenatis.
-                  Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                </p>
-                <p>
-                  Magna exercitation reprehenderit magna aute tempor cupidatat consequat elit
-                  dolor adipisicing. Mollit dolor eiusmod sunt ex incididunt cillum quis. 
-                  Velit duis sit officia eiusmod Lorem aliqua enim laboris do dolor eiusmod. 
-                  Et mollit incididunt nisi consectetur esse laborum eiusmod pariatur 
-                  proident Lorem eiusmod et. Culpa deserunt nostrud ad veniam.
-                </p>
+                <p><strong>Role:</strong> Digital Team Leader, Developer, Digital Strategist</p>
+                <ul className="list-disc list-inside leading-relaxed pb-4">
+                  <li className="-indent-4 pl-4">UI/UX Design</li>
+                  <li className="-indent-4 pl-4">WordPress Development</li>
+                  <li className="-indent-4 pl-4">Salsify API Integration</li>
+                  <li className="-indent-4 pl-4">Klayvio</li>
+                  <li className="-indent-4 pl-4">PriceSpider</li>
+                  <li className="-indent-4 pl-4">Search Engine Optimization</li>
+                </ul>
               </ModalBody>
               <ModalFooter>
-                <Button color="danger" variant="light" onPress={onClose}>
+                <Button radius="full" size="sm" variant="light" onPress={onClose}>
                   Close
                 </Button>
-                <Button color="primary" onPress={onClose}>
-                  Action
+                <Button
+                  href="https://www.wellnesspetfood.com/"
+                  as={Link}
+                  color="primary"
+                  radius="full"
+                  size="sm"
+                  isExternal
+                >Visit Site
                 </Button>
               </ModalFooter>
             </>
@@ -260,32 +282,29 @@ export default function WorkPage() {
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">Modal 4 Title</ModalHeader>
+              <ModalHeader className="flex flex-col gap-1">True Botanicals</ModalHeader>
               <ModalBody>
-                <p> 
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam pulvinar risus non risus hendrerit venenatis.
-                  Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam pulvinar risus non risus hendrerit venenatis.
-                  Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                </p>
-                <p>
-                  Magna exercitation reprehenderit magna aute tempor cupidatat consequat elit
-                  dolor adipisicing. Mollit dolor eiusmod sunt ex incididunt cillum quis. 
-                  Velit duis sit officia eiusmod Lorem aliqua enim laboris do dolor eiusmod. 
-                  Et mollit incididunt nisi consectetur esse laborum eiusmod pariatur 
-                  proident Lorem eiusmod et. Culpa deserunt nostrud ad veniam.
-                </p>
+                <p><strong>Role:</strong> Digital Team Leader</p>
+                <ul className="list-disc list-inside leading-relaxed pb-4">
+                  <li className="-indent-4 pl-4">UI/UX Design</li>
+                  <li className="-indent-4 pl-4">Shopify eCommerce Development</li>
+                  <li className="-indent-4 pl-4">WCAG 2.2 AA Compliance</li>
+                  <li className="-indent-4 pl-4">Google Tag Manager Optimization</li>
+                  <li className="-indent-4 pl-4">Shopify Checkout Extensibility</li>
+                </ul>  
               </ModalBody>
               <ModalFooter>
-                <Button color="danger" variant="light" onPress={onClose}>
+                <Button radius="full" size="sm" variant="light" onPress={onClose}>
                   Close
                 </Button>
-                <Button color="primary" onPress={onClose}>
-                  Action
+                <Button
+                  href="https://truebotanicals.com/"
+                  as={Link}
+                  color="primary"
+                  radius="full"
+                  size="sm"
+                  isExternal
+                  >Visit Site
                 </Button>
               </ModalFooter>
             </>
