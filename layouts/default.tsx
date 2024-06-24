@@ -17,7 +17,7 @@ export default function DefaultLayout({
         {children}
       </main>
       <footer className="w-full flex items-center justify-center py-3">
-      Matt Rowland | matt@landrow.net | 336-462-6642
+      Matt Rowland | matt@landrow.net | 336-462-8842
       </footer>
     </div>
   );
