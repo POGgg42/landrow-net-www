@@ -123,7 +123,7 @@ export default function WorkPage() {
                 }}
                 />
                 <div className="flex flex-col">
-                  <p className="text-medium text-white/60">Charleys Cheesesteaks</p>
+                  <p className="text-medium text-white/60">Charleys</p>
                   <p className="text-tiny text-white/60">charleys.com</p>
                 </div>
               </div>
